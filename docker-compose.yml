@@ -3,3 +3,11 @@ version: "3.9"
 services:
   ingress:
     image: mvp/ingress
+    ports:
+      - "9090:80"
+    restart: always
+  listen:
+    image: mvp/listen
+    ports:
+      - "9090:80"
+    restart: always
