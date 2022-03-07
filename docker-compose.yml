@@ -4,10 +4,16 @@ services:
   ingress:
     image: mvp/ingress
     ports:
-      - "9090:80"
+      - "8080:80"
     restart: always
-  listen:
+    restart: always
+  listen1:
     image: mvp/listen
     ports:
       - "9090:80"
+    restart: always
+  listen2:
+    image: mvp/listen
+    ports:
+      - "9091:80"
     restart: always
